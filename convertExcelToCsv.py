@@ -65,8 +65,8 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     console = Console()
-    df = read_file(args.file)
     console.print(Text(f"===  [Working]  === Reading file: {args.file}", style="bold blue"))
+    df = read_file(args.file)
 
     if args.show:
         rich_display_dataframe(df)
