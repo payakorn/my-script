@@ -66,6 +66,7 @@ if __name__ == "__main__":
 
     console = Console()
     df = read_file(args.file)
+    console.print(Text(f"===  [Working]  === Reading file: {args.file}", style="bold blue"))
 
     if args.show:
         rich_display_dataframe(df)
