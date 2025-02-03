@@ -54,6 +54,9 @@ def convertExcelToCsv(file):
 
 
 if __name__ == "__main__":
+    
+    import sys
+    print(f'Running on env: {sys.prefix}')
 
     parser = argparse.ArgumentParser(description="Excel to CSV converter")
     parser.add_argument("file", type=str, help="Excel file path")
