@@ -70,7 +70,7 @@ if __name__ == "__main__":
         convertExcelToCsv(args.file)
         console.print(
             Text(
-                f"=== [Completed] === Saved as {os.path.dirname(args.file) + get_file_name_without_extension(args.file) + '.csv'}",
+                f"=== [Completed] === Saved as {'./' + os.path.dirname(args.file) + '/' + get_file_name_without_extension(args.file) + '.csv'}",
                 style="bold blue",
             )
         )
